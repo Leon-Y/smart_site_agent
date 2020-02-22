@@ -1,21 +1,14 @@
 package cn.pinming.siteagent.model;
 
-import io.swagger.annotations.ApiModelProperty;
-
 import java.util.Date;
 
 public class Product {
-
-    @ApiModelProperty("主键")
     private Integer id;
 
-    @ApiModelProperty("产品名称")
     private String productName;
 
-    @ApiModelProperty("状态：0 正常 1停用 3删除")
     private Byte type;
 
-    @ApiModelProperty("产品类型：0 企业级 1 项目级")
     private Byte status;
 
     private Date timestampCreate;

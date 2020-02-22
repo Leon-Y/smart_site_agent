@@ -165,73 +165,73 @@ public class AgentOperationLogExample {
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdIsNull() {
-            addCriterion("operate_user_id is null");
+        public Criteria andOperationAgentIdIsNull() {
+            addCriterion("operation_agent_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdIsNotNull() {
-            addCriterion("operate_user_id is not null");
+        public Criteria andOperationAgentIdIsNotNull() {
+            addCriterion("operation_agent_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdEqualTo(String value) {
-            addCriterion("operate_user_id =", value, "operateUserId");
+        public Criteria andOperationAgentIdEqualTo(String value) {
+            addCriterion("operation_agent_id =", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdNotEqualTo(String value) {
-            addCriterion("operate_user_id <>", value, "operateUserId");
+        public Criteria andOperationAgentIdNotEqualTo(String value) {
+            addCriterion("operation_agent_id <>", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdGreaterThan(String value) {
-            addCriterion("operate_user_id >", value, "operateUserId");
+        public Criteria andOperationAgentIdGreaterThan(String value) {
+            addCriterion("operation_agent_id >", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdGreaterThanOrEqualTo(String value) {
-            addCriterion("operate_user_id >=", value, "operateUserId");
+        public Criteria andOperationAgentIdGreaterThanOrEqualTo(String value) {
+            addCriterion("operation_agent_id >=", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdLessThan(String value) {
-            addCriterion("operate_user_id <", value, "operateUserId");
+        public Criteria andOperationAgentIdLessThan(String value) {
+            addCriterion("operation_agent_id <", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdLessThanOrEqualTo(String value) {
-            addCriterion("operate_user_id <=", value, "operateUserId");
+        public Criteria andOperationAgentIdLessThanOrEqualTo(String value) {
+            addCriterion("operation_agent_id <=", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdLike(String value) {
-            addCriterion("operate_user_id like", value, "operateUserId");
+        public Criteria andOperationAgentIdLike(String value) {
+            addCriterion("operation_agent_id like", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdNotLike(String value) {
-            addCriterion("operate_user_id not like", value, "operateUserId");
+        public Criteria andOperationAgentIdNotLike(String value) {
+            addCriterion("operation_agent_id not like", value, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdIn(List<String> values) {
-            addCriterion("operate_user_id in", values, "operateUserId");
+        public Criteria andOperationAgentIdIn(List<String> values) {
+            addCriterion("operation_agent_id in", values, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdNotIn(List<String> values) {
-            addCriterion("operate_user_id not in", values, "operateUserId");
+        public Criteria andOperationAgentIdNotIn(List<String> values) {
+            addCriterion("operation_agent_id not in", values, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdBetween(String value1, String value2) {
-            addCriterion("operate_user_id between", value1, value2, "operateUserId");
+        public Criteria andOperationAgentIdBetween(String value1, String value2) {
+            addCriterion("operation_agent_id between", value1, value2, "operationAgentId");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserIdNotBetween(String value1, String value2) {
-            addCriterion("operate_user_id not between", value1, value2, "operateUserId");
+        public Criteria andOperationAgentIdNotBetween(String value1, String value2) {
+            addCriterion("operation_agent_id not between", value1, value2, "operationAgentId");
             return (Criteria) this;
         }
 
@@ -355,73 +355,73 @@ public class AgentOperationLogExample {
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameIsNull() {
-            addCriterion("operate_user_name is null");
+        public Criteria andOperationAgentNameIsNull() {
+            addCriterion("operation_agent_name is null");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameIsNotNull() {
-            addCriterion("operate_user_name is not null");
+        public Criteria andOperationAgentNameIsNotNull() {
+            addCriterion("operation_agent_name is not null");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameEqualTo(String value) {
-            addCriterion("operate_user_name =", value, "operateUserName");
+        public Criteria andOperationAgentNameEqualTo(String value) {
+            addCriterion("operation_agent_name =", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameNotEqualTo(String value) {
-            addCriterion("operate_user_name <>", value, "operateUserName");
+        public Criteria andOperationAgentNameNotEqualTo(String value) {
+            addCriterion("operation_agent_name <>", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameGreaterThan(String value) {
-            addCriterion("operate_user_name >", value, "operateUserName");
+        public Criteria andOperationAgentNameGreaterThan(String value) {
+            addCriterion("operation_agent_name >", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameGreaterThanOrEqualTo(String value) {
-            addCriterion("operate_user_name >=", value, "operateUserName");
+        public Criteria andOperationAgentNameGreaterThanOrEqualTo(String value) {
+            addCriterion("operation_agent_name >=", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameLessThan(String value) {
-            addCriterion("operate_user_name <", value, "operateUserName");
+        public Criteria andOperationAgentNameLessThan(String value) {
+            addCriterion("operation_agent_name <", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameLessThanOrEqualTo(String value) {
-            addCriterion("operate_user_name <=", value, "operateUserName");
+        public Criteria andOperationAgentNameLessThanOrEqualTo(String value) {
+            addCriterion("operation_agent_name <=", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameLike(String value) {
-            addCriterion("operate_user_name like", value, "operateUserName");
+        public Criteria andOperationAgentNameLike(String value) {
+            addCriterion("operation_agent_name like", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameNotLike(String value) {
-            addCriterion("operate_user_name not like", value, "operateUserName");
+        public Criteria andOperationAgentNameNotLike(String value) {
+            addCriterion("operation_agent_name not like", value, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameIn(List<String> values) {
-            addCriterion("operate_user_name in", values, "operateUserName");
+        public Criteria andOperationAgentNameIn(List<String> values) {
+            addCriterion("operation_agent_name in", values, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameNotIn(List<String> values) {
-            addCriterion("operate_user_name not in", values, "operateUserName");
+        public Criteria andOperationAgentNameNotIn(List<String> values) {
+            addCriterion("operation_agent_name not in", values, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameBetween(String value1, String value2) {
-            addCriterion("operate_user_name between", value1, value2, "operateUserName");
+        public Criteria andOperationAgentNameBetween(String value1, String value2) {
+            addCriterion("operation_agent_name between", value1, value2, "operationAgentName");
             return (Criteria) this;
         }
 
-        public Criteria andOperateUserNameNotBetween(String value1, String value2) {
-            addCriterion("operate_user_name not between", value1, value2, "operateUserName");
+        public Criteria andOperationAgentNameNotBetween(String value1, String value2) {
+            addCriterion("operation_agent_name not between", value1, value2, "operationAgentName");
             return (Criteria) this;
         }
 

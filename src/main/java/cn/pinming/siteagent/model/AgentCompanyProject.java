@@ -1,21 +1,14 @@
 package cn.pinming.siteagent.model;
 
-import io.swagger.annotations.ApiModelProperty;
-
 import java.util.Date;
 
 public class AgentCompanyProject {
-
-    @ApiModelProperty("主键")
     private Integer id;
 
-    @ApiModelProperty("代理商授权企业id")
     private Integer agentCompanyId;
 
-    @ApiModelProperty("关联的桩桩项目id")
     private Integer companyId;
 
-    @ApiModelProperty("状态：0 正常 1冻结 3删除")
     private Byte status;
 
     private Date timestampCreate;

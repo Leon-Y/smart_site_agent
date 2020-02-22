@@ -3,10 +3,10 @@
 <mapper namespace="cn.pinming.siteagent.mapper.AgentOperationLogMapper" >
   <resultMap id="BaseResultMap" type="cn.pinming.siteagent.model.AgentOperationLog" >
     <result column="id" property="id" jdbcType="INTEGER" />
-    <result column="operate_user_id" property="operateUserId" jdbcType="VARCHAR" />
+    <result column="operation_agent_id" property="operationAgentId" jdbcType="VARCHAR" />
     <result column="operation_company_id" property="operationCompanyId" jdbcType="INTEGER" />
     <result column="operation_project_id" property="operationProjectId" jdbcType="INTEGER" />
-    <result column="operate_user_name" property="operateUserName" jdbcType="VARCHAR" />
+    <result column="operation_agent_name" property="operationAgentName" jdbcType="VARCHAR" />
     <result column="operation_company_name" property="operationCompanyName" jdbcType="VARCHAR" />
     <result column="operation_project_name" property="operationProjectName" jdbcType="VARCHAR" />
     <result column="operation_type" property="operationType" jdbcType="TINYINT" />
@@ -74,7 +74,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, operate_user_id, operation_company_id, operation_project_id, operate_user_name, 
+    id, operation_agent_id, operation_company_id, operation_project_id, operation_agent_name, 
     operation_company_name, operation_project_name, operation_type, operation_type_detail, 
     operation_remark, timestamp_create, timestamp_modify
   </sql>
@@ -102,16 +102,16 @@
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="BEFORE" >
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into d_agent_operation_log (id, operate_user_id, operation_company_id, 
-      operation_project_id, operate_user_name, operation_company_name, 
-      operation_project_name, operation_type, operation_type_detail, 
-      operation_remark, timestamp_create, timestamp_modify
-      )
-    values (#{id,jdbcType=INTEGER}, #{operateUserId,jdbcType=VARCHAR}, #{operationCompanyId,jdbcType=INTEGER}, 
-      #{operationProjectId,jdbcType=INTEGER}, #{operateUserName,jdbcType=VARCHAR}, #{operationCompanyName,jdbcType=VARCHAR}, 
-      #{operationProjectName,jdbcType=VARCHAR}, #{operationType,jdbcType=TINYINT}, #{operationTypeDetail,jdbcType=TINYINT}, 
-      #{operationRemark,jdbcType=VARCHAR}, #{timestampCreate,jdbcType=TIMESTAMP}, #{timestampModify,jdbcType=TIMESTAMP}
-      )
+    insert into d_agent_operation_log (id, operation_agent_id, operation_company_id, 
+      operation_project_id, operation_agent_name, 
+      operation_company_name, operation_project_name, 
+      operation_type, operation_type_detail, operation_remark, 
+      timestamp_create, timestamp_modify)
+    values (#{id,jdbcType=INTEGER}, #{operationAgentId,jdbcType=VARCHAR}, #{operationCompanyId,jdbcType=INTEGER}, 
+      #{operationProjectId,jdbcType=INTEGER}, #{operationAgentName,jdbcType=VARCHAR}, 
+      #{operationCompanyName,jdbcType=VARCHAR}, #{operationProjectName,jdbcType=VARCHAR}, 
+      #{operationType,jdbcType=TINYINT}, #{operationTypeDetail,jdbcType=TINYINT}, #{operationRemark,jdbcType=VARCHAR}, 
+      #{timestampCreate,jdbcType=TIMESTAMP}, #{timestampModify,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="cn.pinming.siteagent.model.AgentOperationLog" >
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="BEFORE" >
@@ -120,8 +120,8 @@
     insert into d_agent_operation_log
     <trim prefix="(" suffix=")" suffixOverrides="," >
       id,
-      <if test="operateUserId != null" >
-        operate_user_id,
+      <if test="operationAgentId != null" >
+        operation_agent_id,
       </if>
       <if test="operationCompanyId != null" >
         operation_company_id,
@@ -129,8 +129,8 @@
       <if test="operationProjectId != null" >
         operation_project_id,
       </if>
-      <if test="operateUserName != null" >
-        operate_user_name,
+      <if test="operationAgentName != null" >
+        operation_agent_name,
       </if>
       <if test="operationCompanyName != null" >
         operation_company_name,
@@ -156,8 +156,8 @@
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       #{id,jdbcType=INTEGER},
-      <if test="operateUserId != null" >
-        #{operateUserId,jdbcType=VARCHAR},
+      <if test="operationAgentId != null" >
+        #{operationAgentId,jdbcType=VARCHAR},
       </if>
       <if test="operationCompanyId != null" >
         #{operationCompanyId,jdbcType=INTEGER},
@@ -165,8 +165,8 @@
       <if test="operationProjectId != null" >
         #{operationProjectId,jdbcType=INTEGER},
       </if>
-      <if test="operateUserName != null" >
-        #{operateUserName,jdbcType=VARCHAR},
+      <if test="operationAgentName != null" >
+        #{operationAgentName,jdbcType=VARCHAR},
       </if>
       <if test="operationCompanyName != null" >
         #{operationCompanyName,jdbcType=VARCHAR},
@@ -203,8 +203,8 @@
       <if test="record.id != null" >
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.operateUserId != null" >
-        operate_user_id = #{record.operateUserId,jdbcType=VARCHAR},
+      <if test="record.operationAgentId != null" >
+        operation_agent_id = #{record.operationAgentId,jdbcType=VARCHAR},
       </if>
       <if test="record.operationCompanyId != null" >
         operation_company_id = #{record.operationCompanyId,jdbcType=INTEGER},
@@ -212,8 +212,8 @@
       <if test="record.operationProjectId != null" >
         operation_project_id = #{record.operationProjectId,jdbcType=INTEGER},
       </if>
-      <if test="record.operateUserName != null" >
-        operate_user_name = #{record.operateUserName,jdbcType=VARCHAR},
+      <if test="record.operationAgentName != null" >
+        operation_agent_name = #{record.operationAgentName,jdbcType=VARCHAR},
       </if>
       <if test="record.operationCompanyName != null" >
         operation_company_name = #{record.operationCompanyName,jdbcType=VARCHAR},
@@ -244,10 +244,10 @@
   <update id="updateByExample" parameterType="map" >
     update d_agent_operation_log
     set id = #{record.id,jdbcType=INTEGER},
-      operate_user_id = #{record.operateUserId,jdbcType=VARCHAR},
+      operation_agent_id = #{record.operationAgentId,jdbcType=VARCHAR},
       operation_company_id = #{record.operationCompanyId,jdbcType=INTEGER},
       operation_project_id = #{record.operationProjectId,jdbcType=INTEGER},
-      operate_user_name = #{record.operateUserName,jdbcType=VARCHAR},
+      operation_agent_name = #{record.operationAgentName,jdbcType=VARCHAR},
       operation_company_name = #{record.operationCompanyName,jdbcType=VARCHAR},
       operation_project_name = #{record.operationProjectName,jdbcType=VARCHAR},
       operation_type = #{record.operationType,jdbcType=TINYINT},

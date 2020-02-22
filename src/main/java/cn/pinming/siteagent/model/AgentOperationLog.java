@@ -1,39 +1,26 @@
 package cn.pinming.siteagent.model;
 
-import io.swagger.annotations.ApiModelProperty;
-
 import java.util.Date;
 
 public class AgentOperationLog {
-
-    @ApiModelProperty("主键")
     private Integer id;
 
-    @ApiModelProperty("操作人")
-    private String operateUserId;
+    private String operationAgentId;
 
-    @ApiModelProperty("被操作企业")
     private Integer operationCompanyId;
 
-    @ApiModelProperty("被操作项目id")
     private Integer operationProjectId;
 
-    @ApiModelProperty("操作人姓名")
-    private String operateUserName;
+    private String operationAgentName;
 
-    @ApiModelProperty("被操作企业名称")
     private String operationCompanyName;
 
-    @ApiModelProperty("被操作项目名称")
     private String operationProjectName;
 
-    @ApiModelProperty("操作类型：0 代理商管理 1 产品管理 2 代理商授权 3产品授权")
     private Byte operationType;
 
-    @ApiModelProperty("操作详细类型：0 新增 1 更新 2 删除")
     private Byte operationTypeDetail;
 
-    @ApiModelProperty("日志备注")
     private String operationRemark;
 
     private Date timestampCreate;
@@ -48,12 +35,12 @@ public class AgentOperationLog {
         this.id = id;
     }
 
-    public String getOperateUserId() {
-        return operateUserId;
+    public String getOperationAgentId() {
+        return operationAgentId;
     }
 
-    public void setOperateUserId(String operateUserId) {
-        this.operateUserId = operateUserId == null ? null : operateUserId.trim();
+    public void setOperationAgentId(String operationAgentId) {
+        this.operationAgentId = operationAgentId == null ? null : operationAgentId.trim();
     }
 
     public Integer getOperationCompanyId() {
@@ -72,12 +59,12 @@ public class AgentOperationLog {
         this.operationProjectId = operationProjectId;
     }
 
-    public String getOperateUserName() {
-        return operateUserName;
+    public String getOperationAgentName() {
+        return operationAgentName;
     }
 
-    public void setOperateUserName(String operateUserName) {
-        this.operateUserName = operateUserName == null ? null : operateUserName.trim();
+    public void setOperationAgentName(String operationAgentName) {
+        this.operationAgentName = operationAgentName == null ? null : operationAgentName.trim();
     }
 
     public String getOperationCompanyName() {

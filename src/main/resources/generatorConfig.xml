@@ -45,10 +45,6 @@
             <property name="useActualColumnNames" value="false"/>
             <generatedKey column="id" sqlStatement="MySql"/>
         </table>
-        <table tableName="d_trouble_file" domainObjectName="TroubleFile">
-            <property name="useActualColumnNames" value="false"/>
-            <generatedKey column="id" sqlStatement="MySql"/>
-        </table>
         <table tableName="d_agent_company_project" domainObjectName="AgentCompanyProject">
             <property name="useActualColumnNames" value="false"/>
             <generatedKey column="id" sqlStatement="MySql"/>
@@ -58,6 +54,18 @@
             <generatedKey column="id" sqlStatement="MySql"/>
         </table>
         <table tableName="d_agent_operation_log" domainObjectName="AgentOperationLog">
+            <property name="useActualColumnNames" value="false"/>
+            <generatedKey column="id" sqlStatement="MySql"/>
+        </table>
+        <table tableName="d_user" domainObjectName="User">
+            <property name="useActualColumnNames" value="false"/>
+            <generatedKey column="id" sqlStatement="MySql"/>
+        </table>
+        <table tableName="d_role" domainObjectName="Role">
+            <property name="useActualColumnNames" value="false"/>
+            <generatedKey column="id" sqlStatement="MySql"/>
+        </table>
+        <table tableName="d_function" domainObjectName="Function">
             <property name="useActualColumnNames" value="false"/>
             <generatedKey column="id" sqlStatement="MySql"/>
         </table>
